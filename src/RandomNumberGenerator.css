@@ -1,0 +1,128 @@
+/* Full-screen layout with vibrant colors */
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff5e62);
+    color: white;
+    position: relative;
+  }
+  
+  /* Styling for the title */
+  .title {
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button styles */
+  .generate-button {
+    padding: 18px 35px;
+    font-size: 22px;
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+  }
+  
+  .generate-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff6b81, #ff4757);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Display for the generated number */
+  .number {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    color: #222;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: glowEffect 1s infinite alternate;
+  }
+  
+  /* Glowing effect */
+  @keyframes glowEffect {
+    0% {
+      text-shadow: 0 0 15px #ff4757, 0 0 30px #ff6b81;
+    }
+    100% {
+      text-shadow: 0 0 25px #ff4757, 0 0 40px #ff6b81;
+    }
+  }
+  
+  /* History button positioned at the top-right corner */
+  .history-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #1e90ff, #00bfff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .history-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* History section */
+  .history-container {
+    margin-top: 20px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .history-number {
+    font-weight: bold;
+  }
+  
+  .history-time {
+    font-style: italic;
+    color: #333;
+  }
+  
